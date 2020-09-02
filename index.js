@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 
 app.use(bodyParser.json());
-app.use('/', routes);
+app.use('/api', routes);
 
 app.listen(6781, () => {
   console.log('Server is running...');
